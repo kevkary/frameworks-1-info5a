@@ -24,7 +24,7 @@ export default function Gsspcardesportes({ repo }) {
                     {Array.isArray(noticias) ?
                         noticias.map(noticia =>
                         (noticia.tiponoticia === "esportes" ?
-                            <Cards _id={noticia._id}
+                            <Cards idnoticia={noticia.idnoticia}
                                 titulonoticia={noticia.titulonoticia}
                                 tiponoticia={noticia.tiponoticia}
                                 conteudonoticia={noticia.conteudonoticia}

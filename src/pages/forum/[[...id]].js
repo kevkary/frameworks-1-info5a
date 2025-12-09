@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 
 export default function Page() {
     const router = useRouter()
-    const  subnoticias  = router.query._id
+    const  subnoticias  = router.query.id
     return <>
         <Container className="text-center">
             <h1>Sub-Notícias:</h1>

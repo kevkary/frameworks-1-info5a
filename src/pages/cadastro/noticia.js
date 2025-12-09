@@ -25,8 +25,9 @@ export default function Noticia() {
       });
 
       const result = await response.json();
-      if (!result.status)
-        alert("Notícia não enviada ");
+      if (!result.status){
+        alert("Erro: Notícia não cadastrada.");
+      }
       alert("Notícia enviada com sucesso!");
     } catch (err) {
       alert("Erro ao enviar notícia.");

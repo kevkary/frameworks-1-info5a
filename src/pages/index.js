@@ -8,16 +8,19 @@ export async function getServerSideProps() {
   return { props: { noticias: repo } }
 }
 export default function Home({ noticias }) {
-  return (
-    <Container>
+  return (<>
+    <Container className="mb-5">
       <Row xs={1} md={2} lg={3} className="g-4 pt-2">
         {Array.isArray(noticias) ?
           noticias.map(noticia =>
-            <Cards _id={noticia._id} titulonoticia={noticia.titulonoticia}
-              tiponoticia={noticia.tiponoticia} conteudonoticia={noticia.conteudonoticia}
+            <Cards key={noticia._id} idnoticia={noticia._id} /* alterar aqui */
+              titulonoticia={noticia.titulonoticia}
+              tiponoticia={noticia.tiponoticia}
+              conteudonoticia={noticia.conteudonoticia}
               datahoracadastro={noticia.datahoracadastro} />
-          ): "falso"}
+          ) : "falso"}
       </Row>
     </Container>
+  </>
   );
 }

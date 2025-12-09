@@ -24,7 +24,7 @@ export default function Gsspcardpesquisa({ repo }) {
                     {Array.isArray(noticias) ?
                         noticias.map(noticia =>
                         (noticia.tiponoticia === "pesquisa" ?
-                            <Cards _id={noticia._id}
+                            <Cards idnoticia={noticia.idnoticia}
                                 titulonoticia={noticia.titulonoticia}
                                 tiponoticia={noticia.tiponoticia}
                                 conteudonoticia={noticia.conteudonoticia}
