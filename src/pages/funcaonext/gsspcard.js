@@ -23,7 +23,7 @@ export default function Gsspcard({ repo }) {
                 <Row xs={1} md={2} lg={3} className="g-4">
                     {Array.isArray(noticias) ?
                         noticias.map(noticia =>
-                            <Cards idnoticia={noticia.idnoticia}
+                            <Cards idnoticia={noticia._id}
                                 titulonoticia={noticia.titulonoticia}
                                 tiponoticia={noticia.tiponoticia}
                                 conteudonoticia={noticia.conteudonoticia}

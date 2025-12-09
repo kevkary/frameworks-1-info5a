@@ -14,7 +14,7 @@ export default function Footer() {
     text-center
     fixed-bottom
     py-1'>
-      IFMS-Dourados
+    IFMS-Dourados
     </Container>
   );
 }
